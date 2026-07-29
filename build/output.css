@@ -330,9 +330,6 @@
       margin-block-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
-  .overflow-hidden {
-    overflow: hidden;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -413,14 +410,26 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
+  }
+  .py-30 {
+    padding-block: calc(var(--spacing) * 30);
+  }
+  .py-45 {
+    padding-block: calc(var(--spacing) * 45);
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
   .pt-24 {
     padding-top: calc(var(--spacing) * 24);
+  }
+  .pt-40 {
+    padding-top: calc(var(--spacing) * 40);
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
@@ -487,10 +496,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .duration-7 {
-    --tw-duration: 7ms;
-    transition-duration: 7ms;
-  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
@@ -498,10 +503,6 @@
   .duration-500 {
     --tw-duration: 500ms;
     transition-duration: 500ms;
-  }
-  .duration-700 {
-    --tw-duration: 700ms;
-    transition-duration: 700ms;
   }
   .group-hover\:scale-110 {
     &:is(:where(.group):hover *) {
@@ -527,26 +528,6 @@
       }
     }
   }
-  .hover\:scale-15 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 15%;
-        --tw-scale-y: 15%;
-        --tw-scale-z: 15%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
-  .hover\:scale-105 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 105%;
-        --tw-scale-y: 105%;
-        --tw-scale-z: 105%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
   .hover\:scale-110 {
     &:hover {
       @media (hover: hover) {
@@ -554,20 +535,6 @@
         --tw-scale-y: 110%;
         --tw-scale-z: 110%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
-  .hover\:zoom-50 {
-    &:hover {
-      @media (hover: hover) {
-        zoom: 50%;
-      }
-    }
-  }
-  .hover\:zoom-100 {
-    &:hover {
-      @media (hover: hover) {
-        zoom: 100%;
       }
     }
   }
@@ -851,6 +818,11 @@
   .xl\:px-100 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 100);
+    }
+  }
+  .xl\:py-52 {
+    @media (width >= 80rem) {
+      padding-block: calc(var(--spacing) * 52);
     }
   }
   .xl\:text-2xl {
